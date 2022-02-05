@@ -1,0 +1,66 @@
+.wd-dark-grey-bg {
+    background: dimgray;
+}
+.wd-white-fg {
+    color: white;
+}
+.wd-search-bar-section {
+    height: 5vh;
+}
+.wd-search-icon {
+    border-radius: 30px 0px 0px 30px;
+    background: dimgray;
+    grid-column-start: 2;
+    object-fit: contain;
+    text-align: center;
+}
+.wd-search-bar {
+    -webkit-appearance: none;
+    border-radius: 30px 30px 30px 30px;
+    float: left;
+    height: 100%;
+    width: 80%;
+}
+.wd-settings-icon {
+    -webkit-appearance: none;
+    float: right;
+    margin-right: 12px;
+}
+.wd-link.wd-selected-link {
+    color: rgb(29,161,242);
+    border-bottom: rgb(29,161,242) 2px solid;
+}
+.wd-link {
+    color: rgb(110, 118, 125);
+    padding: 16px;
+    font-size: 15px;
+    float: left;
+}
+.wd-links {
+    display: block;
+    width: 100%;
+}
+.wd-suggested-topics {
+}
+.wd-suggested-topics p {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+.wd-suggested-topics h3 {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+.wd-suggested-topics .wd-author {
+    color: white;
+}
+.wd-suggested-topics .wd-picture {
+    border-radius: 30px;
+    width: 100px;
+    height: 100px;
+    float: right;
+    display: inline;
+    margin-right: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
