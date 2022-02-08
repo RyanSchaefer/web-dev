@@ -6,6 +6,8 @@ html {
 .wd-border-grey {
     border-top: 1px solid rgb(47, 51, 54);
     border-bottom: 1px solid rgb(47, 51, 54);
+    border-left: 1px solid rgb(47, 51, 54);
+    border-right: 1px solid rgb(47, 51, 54);
 }
 .wd-100w {
     width: 100%
@@ -55,4 +57,7 @@ html {
 }
 .wd-bookmarks-links a {
     width: 25%;
+}
+.wd-left-padding {
+    padding-left: 16px
 }
