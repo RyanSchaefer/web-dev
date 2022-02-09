@@ -25,6 +25,14 @@
     or class This paragraph's style is set by a rule
     referring to the P tags
 </p>
+<h2>Selectors</h2>
+<h3>Link tag</h3>
+<p>
+    The best way to apply CSS rules is to declare them
+    in a separate CSS file and load it with the LINK tag.
+    Always use this method.
+</p>
+
 <h3>ID selectors</h3>
 <p id="id-selector-1">
     Instead of changing the look and
@@ -36,6 +44,7 @@
     Here's another paragraph using a
     different ID and a different look and
     feel</p>
+
 <h3>Class selectors</h3>
 <p class="class-selector">
     Instead of using IDs to refer to
@@ -62,6 +71,7 @@
         </p>
     </div>
 </div>
+
 <h2>Colors</h2>
 <h3 class="fg-color-blue">Foreground color</h3>
 <p class="fg-color-red">
@@ -72,11 +82,13 @@
     This background of this paragraph is red but
     <span class="bg-color-green fg-color-white"> the background
 	of this text is green and the foreground white</span></p>
+
 <h2>Borders</h2>
 <p class="border-fat border-red border-solid">
     Solid fat red border</p>
 <p class="border-thin border-blue border-dashed">
     Dashed thin blue border</p>
+
 <h2>Padding</h2>
 <div class="padded-top-left border-fat border-red border-solid bg-color-yellow">
     Padded top left
@@ -85,6 +97,16 @@
     Padded bottom right</div>
 <div class="padding-fat border-fat border-yellow border-solid bg-color-blue fg-color-white">
     Padded all around</div>
+
+<h2>Margins</h2>
+<div class="margin-bottom padded-top-left border-fat border-red border-solid bg-color-yellow">
+    Margin bottom</div>
+<div class="margin-right-left padded-bottom-right border-fat border-blue border-solid bg-color-yellow">Margin left right
+</div>
+<div class="margin-all-around padding-fat border-fat border-yellow border-solid bg-color-blue fg-color-white">
+    Margin all around</div>
+
+
 <h3>Rounded corners</h3>
 <p class="rounded-corners-top border-thin border-blue border-solid padding-fat">
     Rounded corners on the top
@@ -98,6 +120,7 @@
 <p class="rounded-corners-inline border-thin border-blue border-solid padding-fat">
     Different rounded corners
 </p>
+
 <h2>Dimension</h2>
 <div>
     <div class="dimension-portrait bg-color-yellow">
@@ -110,6 +133,7 @@
         Square
     </div>
 </div>
+
 <h2>Position</h2>
 <h3>Relative</h3>
 <div>
@@ -122,6 +146,7 @@
     <div class="bg-color-red dimension-square">
         Square</div>
 </div>
+
 <h3>Absolute position</h3>
 <div class="pos-relative">
     <div class="pos-absolute-10-10 bg-color-yellow dimension-portrait">
@@ -134,6 +159,7 @@
         Square
     </div>
 </div>
+
 <h3>Fixed position</h3>
 Checkout the blue square that says "Fixed position" stuck all the way on the right
 and half way down the page. It doesn't scroll with the rest of the page.
@@ -155,6 +181,7 @@ Its position is "Fixed".
     <img class="float-right"      src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
     <div class="float-done"></div>
 </div>
+
 <h2>Grid layout</h2>
 <div class="grid-row">
     <div class="grid-col-half-page bg-color-yellow">
