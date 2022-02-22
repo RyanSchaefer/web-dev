@@ -12,12 +12,13 @@
     grid-column-start: 2;
     object-fit: contain;
     text-align: center;
+    background-color: white;
 }
 .wd-search-bar#search-bar {
     -webkit-appearance: none;
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
-    height: 90%;
+    height: 100%;
     width: 1rem;
 }
 .wd-settings-icon {
@@ -76,7 +77,7 @@
     border-radius: 30px;
 }
 .wd-picture-heading {
-    margin-top: -55px;
+    margin-top: -80px;
     z-index: 1000;
     color: white;
 }
