@@ -36,7 +36,7 @@ const ExploreComponent = () => {
             </div>
            </ul>   
             <div>
-                <img src="images/starship.jpg" className="img-fluid"/>
+                <img src="./images/starship.jpg" className="img-fluid"/>
                 <h3 className="position-absolute zindex-bring-to-front wd-picture-heading px-3"><b>SpaceX's Starship</b></h3>
             </div>
            <PostSummaryList/>
