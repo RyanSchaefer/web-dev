@@ -1,11 +1,12 @@
 import React from "react";
 import '../../../styling/explore.css'
+
 const PostSummaryItem = ({props={
     "topic": "Web Development",
     "userName": "ReactJS",
     "time": "2h",
     "title": "React.js is a component based front end library that makes it very easy to build Single Page Applications or SPAs",
-    "image": "images/react-black"
+    "image": "./images/react.png"
 }}) => {
     return (
         <div className="list-group-item d-flex flex-row">
