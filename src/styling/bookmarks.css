@@ -1,0 +1,45 @@
+.wd-bookmarks-header {
+    color: white;
+    font-size: 20px;
+    margin-top: 12px;
+    border-bottom: 1px solid lightgrey;
+}
+.wd-bookmarks-avatar {
+    width: fit-content;
+    float: left;
+}
+.wd-bookmarks-header-post {
+    float: left;
+    margin-left: 12px;
+    max-width: 506px;
+}
+.wd-bookmarks-header-post * {
+    float: left;
+}
+.wd-bookmarks-main{
+    color: white;
+    font-size: 15px;
+}
+.wd-bookmarks-secondary {
+    color: lightgray;
+    font-size: 15px;
+}
+.wd-bookmarks-post-spacer {
+    display: block;
+}
+.wd-bookmarks-body{
+    font-size: 15px;
+    color: white;
+}
+.wd-bookmark-image {
+    width: 504px;
+    height: 264px;
+    border-radius: 12px 12px 0 0;
+}
+.wd-border-grey-all {
+    border: 1px grey solid;
+    border-radius: 0 0 12px 12px;
+}
+.wd-padding-all {
+    padding: 12px;
+}

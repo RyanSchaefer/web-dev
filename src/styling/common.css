@@ -1,0 +1,63 @@
+html {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+    background: black;
+}
+.wd-border-grey {
+    border-top: 1px solid rgb(47, 51, 54);
+    border-bottom: 1px solid rgb(47, 51, 54);
+    border-left: 1px solid rgb(47, 51, 54);
+    border-right: 1px solid rgb(47, 51, 54);
+}
+.wd-100w {
+    width: 100%
+}
+.wd-fit-to-div {
+    max-height:85%;
+    max-width: 85%;
+}
+.wd-remove-box-model {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+}
+.wd-spacing {
+    border-left: 16px solid;
+    height: 100%;
+}
+.wd-remove-float {
+    clear:both;
+}
+.wd-group-author-and-title {
+    float: left;
+    height: 100%;
+}
+.wd-handle {
+    font-size: 13px;
+    color: lightgray;
+}
+.wd-small-spacing {
+    margin-bottom: 12px;
+}
+.wd-avatar {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+.wd-small-icon {
+    width: 15px;
+    height: 15px;
+}
+.wd-space-text-icon {
+    margin-left: 12px;
+}
+.wd-bookmarks-links {
+    width: 100%;
+}
+.wd-bookmarks-links a {
+    width: 25%;
+}
+.wd-left-padding {
+    padding-left: 16px
+}
