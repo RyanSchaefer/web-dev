@@ -11,7 +11,6 @@ const Index = () => {
         <>
             <h1>Labs</h1>
             <TodoList/>
-            <TodoItem/>
             <ConditionalOutput/>
             <Styles/>
             <Classes/>
