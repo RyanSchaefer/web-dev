@@ -41,7 +41,7 @@ const TuitListItem = ({tuit}) => {
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowFullScreen></iframe>
                         }
-                        <TuitStats tuit={tuit}/>
+                        {tuit.stats && <TuitStats tuit={tuit}/>}
                     </td>
                 </tr>
             </table>

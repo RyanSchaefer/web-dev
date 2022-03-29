@@ -11,7 +11,7 @@ const TuitList = () => {
     const tuits = useSelector(selectAllTuits);
     const dispatch = useDispatch();
     const [newTuit, setNewTuit] =
-        useState({tuit: 'New tuit'});
+        useState({tweet: 'New tuit', stats: {likes: 0}});
     useEffect(() =>
             findAllTuits(dispatch),
         []);
@@ -22,14 +22,17 @@ const TuitList = () => {
                     tuits.map(tuit =>
                         <>
                             <TuitListItem tuit={tuit}/>
-                            <i className="fas fa-remove float-end"
+                            <i className="fas fa-crosshairs float-end"
                                onClick={() => deleteTuit(
                                    dispatch, tuit)}/>
                             <div>
-                                Likes: {tuit.likes}
+                                Likes: {tuit.stats.likes}
                                 <i onClick={() => updateTuit(dispatch, {
     ...tuit,
-    likes: tuit.likes + 1
+    stats: {
+        ...tuit.stats,
+        likes: tuit.stats.likes + 1
+    }
 })} className="far fa-thumbs-up ms-2"/>
                             </div>
                         </>
@@ -45,7 +48,7 @@ const TuitList = () => {
     onChange={(e) =>
         setNewTuit({
             ...newTuit,
-            tuit: e.target.value
+            tweet: e.target.value
         })}/>
         </>
     )
