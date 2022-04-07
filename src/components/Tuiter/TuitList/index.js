@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector}
     from "react-redux";
-import * as service from '../../../services/tuits-service';
 import TuitListItem from "./TuitListItem";
 import {createTuit, deleteTuit, findAllTuits, updateTuit} from "../../../actions/tuits-actions";
 
@@ -11,7 +10,7 @@ const TuitList = () => {
     const tuits = useSelector(selectAllTuits);
     const dispatch = useDispatch();
     const [newTuit, setNewTuit] =
-        useState({tweet: 'New tuit', stats: {likes: 0}});
+        useState({tuit: 'New tuit', likes: 0, postedBy: {username: "me"}});
     useEffect(() =>
             findAllTuits(dispatch),
         []);
@@ -22,17 +21,11 @@ const TuitList = () => {
                     tuits.map(tuit =>
                         <>
                             <TuitListItem tuit={tuit}/>
-                            <i className="fas fa-crosshairs float-end"
-                               onClick={() => deleteTuit(
-                                   dispatch, tuit)}/>
                             <div>
-                                Likes: {tuit.stats.likes}
+                                Likes: {tuit.likes}
                                 <i onClick={() => updateTuit(dispatch, {
     ...tuit,
-    stats: {
-        ...tuit.stats,
-        likes: tuit.stats.likes + 1
-    }
+    likes: tuit.likes + 1
 })} className="far fa-thumbs-up ms-2"/>
                             </div>
                         </>
@@ -48,7 +41,7 @@ const TuitList = () => {
     onChange={(e) =>
         setNewTuit({
             ...newTuit,
-            tweet: e.target.value
+            tuit: e.target.value
         })}/>
         </>
     )

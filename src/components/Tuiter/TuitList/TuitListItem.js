@@ -20,10 +20,10 @@ const TuitListItem = ({tuit}) => {
                     <td className="ps-3 text-start" style={{width: '100%'}}>
                         <i onClick={deleteTweetClickHandler} className="fa fa-crosshairs fa-pull-right text-warning"/>
                         <span className="fw-bold">{tuit.userName}</span>
-                        {tuit.verified && <i className="ms-1 fas fa-badge-check"></i>}
-                        <span className="ms-1 text-secondary me-auto">@{tuit.handle}</span>
+                        {tuit.verified && <i className="ms-1 fas fa-badge-check"/>}
+                        <span className="ms-1 text-secondary me-auto">@{tuit.postedBy.username}</span>
                         <div className="text-start">
-                            {tuit.tweet}
+                            {tuit.tuit}
                         </div>
                         {
                             tuit.attachments && tuit.attachments.image &&
